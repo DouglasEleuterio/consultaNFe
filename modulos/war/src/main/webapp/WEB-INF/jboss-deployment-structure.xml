@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<jboss-deployment-structure
+    xmlns="urn:jboss:deployment-structure:1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <deployment>
+        <dependencies>
+            <system export="true">
+                <paths>
+                    <path name="com/sun/net/ssl/internal/ssl"/>
+                </paths>
+            </system>
+            <!--<module name="javaee.api"/>-->
+            <!--<module name="javax.enterprise.deploy.api"/>-->
+            <!--<module name="javax.activation.api"/>-->
+            <!--<module name="javax.annotation.api"/>-->
+            <!--<module name="javax.ejb.api"/>-->
+            <!--<module name="javax.el.api"/>-->
+            <!--<module name="javax.enterprise.api"/>-->
+            <!--<module name="javax.inject.api"/>-->
+            <!--<module name="javax.interceptor.api"/>-->
+            <!--<module name="javax.jms.api"/>-->
+            <!--<module name="javax.jws.api"/>-->
+            <!--<module name="javax.mail.api"/>-->
+            <!--<module name="javax.management.j2ee.api"/>-->
+            <!--<module name="javax.persistence.api"/>-->
+            <!--<module name="javax.resource.api"/>-->
+            <!--<module name="javax.rmi.api"/>-->
+            <!--<module name="javax.security.auth.message.api"/>-->
+            <!--<module name="javax.security.jacc.api"/>-->
+            <!--<module name="javax.servlet.api"/>-->
+            <!--<module name="javax.servlet.jsp.api"/>-->
+            <!--<module name="javax.transaction.api"/>-->
+            <!--<module name="javax.validation.api"/>-->
+            <!--<module name="javax.ws.rs.api"/>-->
+            <!--<module name="javax.xml.bind.api"/>-->
+            <!--<module name="javax.xml.registry.api"/>-->
+            <!--<module name="javax.xml.soap.api"/>-->
+            <!--<module name="javax.xml.ws.api"/>-->
+            <!--<module name="javax.api"/>-->
+            <!--<module name="sun.jdk"/>-->
+            <!--<module name="system" >-->
+                <!--<imports>-->
+                    <!--<include-set>-->
+                        <!--<path name="com/sun/ssl/internal/ssl"/>-->
+                    <!--</include-set>-->
+                <!--</imports>-->
+            <!--</module>-->
+            <!--<ear-subdeployments-isolated>false</ear-subdeployments-isolated>-->
+            <!--<deployment>-->
+                <!--<exclusions>-->
+                    <!--<module name="org.apache.log4j" />-->
+                <!--</exclusions>-->
+            <!--</deployment>-->
+            <!--<sub-deployment name="eservice.war">-->
+                <!--<dependencies>-->
+                    <!--<system>-->
+                        <!--<paths>-->
+                            <!--<path name="com/sun/org/apache/xerces/internal/jaxp/datatype"/>-->
+                            <!--<path name="com/sun/jndi/rmi" />-->
+                        <!--</paths>-->
+                    <!--</system>-->
+                <!--</dependencies>-->
+
+            <!--</sub-deployment>-->
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

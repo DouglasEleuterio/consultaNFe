@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>br.com.consulta</groupId>
+        <artifactId>consultanfe</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../../</relativePath>
+    </parent>
+
+    <artifactId>consultanfe-war</artifactId>
+    <packaging>war</packaging>
+
+    <properties>
+        <wildfly.deployment.name>consultanfe</wildfly.deployment.name>
+        <wildfly.deployment.runtime.name>consultanfe.war</wildfly.deployment.runtime.name>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>br.com.consulta</groupId>
+            <artifactId>consultanfe-servico</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
